@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero {
+  background-color: #000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 20px 0;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  border-left: 2px solid #fff;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.download {
+  padding: 14px 40px;
+  color: #fff;
+  background: linear-gradient(45deg, #df4881, #c430d7);
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar {
+  width: 20%;
+  padding-top: 20px;
+  border-right: 2px solid #fff;
+  overflow-y: auto;
+}
+
+.navbar ul {
+  padding: 0;
+  width: 100%;
+}
+
+.navbar ul li {
+  margin-bottom: 10px;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.metric {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.metric:nth-child(odd) {
+  background-color: #ff5252;
+}
+
+.metric:nth-child(even) {
+  background-color: #66bb6a;
+}
+
+.metric:nth-child(3n) {
+  background-color: #ffa726;
+}
+
+.metric h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.metric .value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.orders {
+  margin-top: 30px;
+}
+
+.orders h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.orders ul {
+  padding: 0;
+}
+
+.orders ul li {
+  margin-bottom: 10px;
+}
+
+.booking-table {
+  margin-top: 30px;
+}
+
+.booking-table h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.booking-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table table th,
+.booking-table table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.booking-table table th {
+  background-color: #536dfe;
+  color: #fff;
+}
+footer {
+  width: 100%;
+  background: black;
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+.footer_logo {
+  width: 120px;
+  position: relative;
+  top: -23px;
+  left: -20px;
+}
+.footer_about {
+  position: relative;
+  top: -23px;
+}
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer_email {
+  width: fit-content;
+  border-bottom: 1.5px solid white;
+  margin: 20px 0;
+}
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.col form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid white;
+  margin-bottom: 50px;
+}
+.col form .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.col form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+.col form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.col form button .icon_right {
+  font-size: 16px;
+  color: #ccc;
+}
+.col .social_icons .social_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+  background: white;
+  margin-right: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+footer .copyright {
+  text-align: center;
+}
+.bottom_line {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.bottom_line span {
+  width: 15px;
+  height: 100%;
+  background: #f66335;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moveline 2s linear infinite;
+}
+@keyframes moveline {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
